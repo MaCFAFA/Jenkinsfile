@@ -4,15 +4,16 @@ pipeline {
         stage('GiT checkout') {
             steps {    
                 script{
-                echo 'Running Git Checkout'
+                    
+                    sh echo 'Running Git Checkout'
               
-                pwd
+                    sh pwd
               
                 //find . -name Dockerfile
                 
-                which docker 
+                   sh which docker 
                 
-                ls
+                   sh ls
                 }
             }
         }
