@@ -5,15 +5,15 @@ pipeline {
             steps {    
                 script {
                     
-                    sh echo 'Running Git Checkout'
+                    sh 'echo "Running Git Checkout" '
               
-                    sh pwd
+                    sh 'pwd'
               
                 //find . -name Dockerfile
                 
-                   sh which docker 
+                   sh 'which docker' 
                 
-                   sh ls
+                   sh 'ls'
                 }
             }
         }
