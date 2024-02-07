@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('GiT checkout') {
             steps {    
-                script {
+                //script {
                     
                     sh 'echo "Running Git Checkout" '
               
@@ -14,7 +14,7 @@ pipeline {
                    sh 'which docker' 
                 
                    sh 'ls'
-                }
+                //}
             }
         }
     }
