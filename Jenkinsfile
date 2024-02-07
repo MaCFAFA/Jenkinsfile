@@ -7,7 +7,7 @@ pipeline {
               
                 pwd
               
-                find . -name Dockerfile
+                #find . -name Dockerfile
                 
                 which docker 
                 
