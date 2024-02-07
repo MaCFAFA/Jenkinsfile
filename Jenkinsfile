@@ -2,7 +2,8 @@ pipeline {
     agent any 
     stages {
         stage('GiT checkout') {
-            steps {
+            steps {    
+                script{
                 echo 'Running Git Checkout'
               
                 pwd
@@ -12,6 +13,7 @@ pipeline {
                 which docker 
                 
                 ls
+                }
             }
         }
     }
